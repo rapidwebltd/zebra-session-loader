@@ -1,6 +1,6 @@
 # Zebra Session Loader
 
-This library automatically starts Zebra sessions (database powered sessions) wherever `vendor/autoload.php` is included.
+This library automatically starts Zebra sessions (database powered sessions) wherever `vendor/autoload.php` is included. It can be useful if you need to add database powered sessions to a bespoke PHP application that lacks an existing framework.
 
 ## Installation
 
