@@ -1,13 +1,26 @@
-# zebra-session-loader
-Automatically start Zebra sessions (database powered sessions)
+# Zebra Session Loader
 
-# Installation
+This library automatically starts Zebra sessions (database powered sessions) wherever `vendor/autoload.php` is included.
 
-Just run `composer require rapidwebltd/zebra-session-loader` .
+## Installation
 
-## Usage
+1. Run `composer require rapidwebltd/zebra-session-loader`.
 
-Add the following to your `.env` file:
+2. Create a `session_data` table in your MySQL database to hold session data. You can use the SQL below to do this.
+
+```sql
+CREATE TABLE `session_data` (
+  `session_id` varchar(32) NOT NULL default '',
+  `hash` varchar(32) NOT NULL default '',
+  `session_data` blob NOT NULL,
+  `session_expire` int(11) NOT NULL default '0',
+  PRIMARY KEY  (`session_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+```
+
+## Configuration
+
+Add the following to your `.env` file, changing the database connection details to point at the database containing your `session_data` table.
 
 ```
 ZEBRA_SESSION_SECURITY_CODE=random_string_of_chars_og4bf42kh07odgh20gjwe
