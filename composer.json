@@ -1,0 +1,22 @@
+{
+    "name": "rapidwebltd/zebra-session-loader",
+    "description": "Automatically start Zebra sessions (database powered sessions)",
+    "type": "library",
+    "require": {
+        "divineomega/php-dcom": "^1.2",
+        "stefangabos/zebra_session": "^2.1",
+        "divineomega/dotenv-loader": "^2.0"
+    },
+    "license": "LGPL3",
+    "authors": [
+        {
+            "name": "Jordan Hall",
+            "email": "jordan.hall@rapidweb.biz"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "src/ZebraSessionLoader.php"
+        ]
+    }
+}
