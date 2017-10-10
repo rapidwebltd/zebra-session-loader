@@ -22,6 +22,8 @@ CREATE TABLE `session_data` (
 
 Add the following to your `.env` file, changing the database connection details to point at the database containing your `session_data` table.
 
+You should also ensure the security code is changed to a random string.
+
 ```
 ZEBRA_SESSION_SECURITY_CODE=random_string_of_chars_og4bf42kh07odgh20gjwe
 ZEBRA_SESSION_DATABASE_CONNECTION_NAME=main
