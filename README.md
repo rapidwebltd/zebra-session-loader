@@ -22,4 +22,4 @@ DCOM_MAIN_DATABASE_PASSWORD=password
 DCOM_MAIN_DATABASE_NAME=dbname
 ```
 
-Now any page that includes `vendor/autoload.php` will automatically used database powered sessions, provided by Zebra sessions.
+Now any page that includes `vendor/autoload.php` will automatically use database powered sessions, provided by Zebra sessions.
