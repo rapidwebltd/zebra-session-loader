@@ -1,6 +1,6 @@
 {
     "name": "rapidwebltd/zebra-session-loader",
-    "description": "Automatically start Zebra sessions (database powered sessions)",
+    "description": "This library automatically starts Zebra sessions (database powered sessions) wherever vendor/autoload.php is included. It can be useful if you need to add database powered sessions to a bespoke PHP application that lacks an existing framework.",
     "type": "library",
     "require": {
         "divineomega/php-dcom": "^1.2",
