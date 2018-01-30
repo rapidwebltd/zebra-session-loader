@@ -7,7 +7,7 @@
         "stefangabos/zebra_session": "^2.1",
         "divineomega/dotenv-loader": "^2.0"
     },
-    "license": "LGPL3",
+    "license": "LGPL-3.0-only",
     "authors": [
         {
             "name": "Jordan Hall",
